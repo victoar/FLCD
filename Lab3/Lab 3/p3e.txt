@@ -1,0 +1,13 @@
+pe-lista 8nr,sumaPare,cifra;
+doresc nr;
+sumaPare = 0;
+
+dai_sa_mearga (nr > 0) {
+	cifra = nr%10;
+	daca merge (cifra % 2 == 0) {
+		sumaPare += cifra;
+	}
+	nr = nr / 10;
+}
+
+spune "suma = $sumaPare";

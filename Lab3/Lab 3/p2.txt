@@ -1,0 +1,15 @@
+pe_lista nr, o, clonaNr;
+doresc nr;
+clonaNr = nr;
+o = 0;
+
+da_i_sa_mearga (nr > 0) {
+	o = o*10 + nr%10;
+	nr = nr/10;
+}
+
+daca_merge (clonaNr == o) {
+	spune "DA";
+} daca nu {
+	spune "NU";
+}	
