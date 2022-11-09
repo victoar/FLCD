@@ -34,7 +34,8 @@ if __name__ == '__main__':
         for line in file:
             for element in split_Line(line):
                 if element in separators or element in operators or element in reservedWords:
-                    pif.add(find_pos(element), -1)
+                    if element != ' ':
+                        pif.add(find_pos(element), -1)
                 elif is_id(element):
                     pif.add("id", (st.symbolTable.hash(element), st.find_pos(element)))
                 elif is_const(element):
@@ -46,9 +47,7 @@ if __name__ == '__main__':
     index = 0
     while index < st.symbolTable.capacity:
         node = st.symbolTable.items[index]
-        if node is None:
-            f.write("{:<15} {:<15} \n".format(index, "None"))
-        else:
+        if node is not None:
             prev = st.symbolTable.items[index]
             values = []
             while node is not None:

@@ -1,21 +1,9 @@
 Bucket          Values          
-0               None            
-1               ['"$a"']        
 2               ['"$b"']        
-3               None            
-4               None            
-5               None            
-6               None            
 7               ['nu']          
 8               ['merge']       
-9               None            
-10              None            
-11              None            
-12              None            
 13              ['daca']        
-14              None            
-15              None            
-16              None            
+15              ['ab', 'ba']    
 17              ['a']           
 18              ['b']           
-19              None            
+19              ['"$ab"']       

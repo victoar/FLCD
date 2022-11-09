@@ -12,7 +12,7 @@ def is_id(token):
     return re.match(r'^[a-zA-Z]([a-zA-Z]|[0-9]|_){,7}$', token) is not None
 
 def is_const(token):
-    return re.match('^(0|[\+\-]?[1-9][0-9]*)$|^\'.\'$|^\".*\"$', token) is not None
+    return re.match('^(0|[\+\-]?[1-9][0-9]*)$|^\".*\"$', token) is not None
 
 def split_Line(line):
     element = ''

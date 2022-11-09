@@ -1,9 +1,9 @@
 pe_lista a,b;
-doresc a;
-doresc b;
+doresc ab;
+doresc ba;
 
 daca merge (a > b) {
-	spune "$a";
+	spune "$ab";
 } daca nu {
 	spune "$b";
 }
