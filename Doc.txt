@@ -1,0 +1,21 @@
+REGEX
+
+IDENTIFIER_REGEX = "^[a-zA-Z]([a-zA-Z]|[0-9]|_){,7}$";
+-	has to start with a letter(lowercase/uppercase) followed by 0 or more letters or digits or underscore of max 7 length
+
+CONSTANT_REGEX = "^(0|[\+\-]?[1-9][0-9]*)$|^\".*\"$";
+-	it can be 0 or a signed number or a string that can contain any character available since it is surrounded by quotation mark
+
+
+SYMBOL TABLE
+-	uses hash table
+-	hash function uses sum of ascii characters in the constant or identifier
+-	collision handling -> separate chaining (using Linked list)
+-	insert - adds an entry to the list and returns the index, or returns the position of already existing entry;
+
+PIF
+-	ArrayList of Pairs
+-	Pair contains String (token) and Integer (position)
+-	add – Adds a Pair of a String and an Integer to the list of entries
+
+
