@@ -1,0 +1,10 @@
+p r q
+0 1
+p
+q
+p 1 r
+r 1 r
+p 0 p
+r 0 q
+q 1 r
+r 0 p
