@@ -1,0 +1,9 @@
+pe_lista a,b;
+doresc a;
+doresc b;
+
+daca_merge (a > b) {
+	spune "a";
+} daca_nu {
+	spune "b";
+}
