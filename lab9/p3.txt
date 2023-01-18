@@ -1,0 +1,13 @@
+pe lista nr,sumaPare,cifra
+doresc nr
+sumaPare = 0
+
+da i sa mearga (nr > 0) {
+	cifra = nr%10
+	daca merge (cifra % 2 == 0) {
+		sumaPare = sumaPare + cifra
+	}
+	nr = nr / 10
+}
+
+spune "sumaPare"
